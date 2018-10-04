@@ -1,9 +1,11 @@
+require 'dry-configurable'
+
 module Openvidu
-  class Setting
+  class Settings
     extend Dry::Configurable
 
-    setting :api_url, read: true
-    setting :api_key, read: true
+    setting :api_url
+    setting :api_key
     setting :openvidu_user, 'OPENVIDUAPP'
 
   end

@@ -1,9 +1,23 @@
-require 'openvidu/version'
 require 'dry-configurable'
-require 'api_struct'
-require 'openvidu/settings'
-require 'openvidu/api_struct_settings'
 
+require 'openvidu/version'
+
+require 'openvidu/auth'
+require 'openvidu/exceptions'
+require 'openvidu/container'
+
+require 'openvidu/settings'
+require 'openvidu/validate_arguments'
+
+require 'openvidu/clients/client'
+require 'openvidu/clients/session'
+
+require 'openvidu/extensions/hash'
+require 'openvidu/extensions/string'
+require 'openvidu/constants/constants'
+
+require 'openvidu/session'
+require 'openvidu/token'
 
 module Openvidu
 end

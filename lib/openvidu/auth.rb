@@ -7,7 +7,7 @@ module Openvidu
     end
 
     def initialize
-      @user, @password = Openvidu.Settings.config.openvidu_user, Openvidu.Settings.config.api_key
+      @user, @password = Openvidu::Settings.config.openvidu_user, Openvidu::Settings.config.api_key
     end
 
     def call
@@ -19,7 +19,7 @@ module Openvidu
     end
 
     def credentials
-      "#{@user}:#{@password}"
+      Base64.encode64("#{@user}:#{@password}")
     end
 
   end
