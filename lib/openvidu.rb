@@ -4,7 +4,6 @@ require 'openvidu/version'
 
 require 'openvidu/auth'
 require 'openvidu/exceptions'
-require 'openvidu/container'
 
 require 'openvidu/settings'
 require 'openvidu/validate_arguments'
